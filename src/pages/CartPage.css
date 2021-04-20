@@ -1,0 +1,7 @@
+.main {
+    display: flex;
+}
+.left-com {
+    padding-left: 50px;
+    flex:1
+}

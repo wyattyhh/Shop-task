@@ -3,10 +3,14 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import en_US from 'antd/lib/locale/en_US';
+import {ConfigProvider} from 'antd';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <ConfigProvider locale={en_US}>
+      <App/>
+    </ConfigProvider>
   </React.StrictMode>,
   document.getElementById('root')
 );

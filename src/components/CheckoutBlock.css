@@ -1,0 +1,14 @@
+.checkout-bar {
+    display: flex;
+    width: 200px;
+    margin: 0 100px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.price-tag {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
