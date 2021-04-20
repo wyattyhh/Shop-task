@@ -20,7 +20,6 @@ function ShoppingPage(props) {
       // if item exist, increase quantity
       setCartItems(cartItems.map((x) => x.id === item.id ? {...exist, qty: exist.qty + 1} : x ))
     } else {
-      console.log(1);
       setCartItems([...cartItems, {...item, qty: 1}])
     }
     console.log(cartItems);
@@ -30,7 +29,7 @@ function ShoppingPage(props) {
     <div>
       <NavBar cartItems={cartItems}/>
       <div className="home">
-        {items.map((item) => (<ItemBlock key={ item.id } item={ item } onAdd={onAdd}/>))}
+        {items.map((item) => (<ItemBlock key={ item.id + item.purchaseMode } item={ item } onAdd={onAdd}/>))}
       </div>
     </div>
 

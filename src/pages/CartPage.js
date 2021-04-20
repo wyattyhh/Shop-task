@@ -26,6 +26,7 @@ function CartPage(props) {
     }
     console.log(cartItems);
   };
+
   const onDelete = (item) =>  {
     console.log(1);
     if (item.qty > 0) {

@@ -1,4 +1,4 @@
-import React, {useEffect, useState} from 'react';
+import React from 'react';
 import {List, Avatar, Button} from 'antd';
 import {itemTotal} from '../methods/calculate.js';
 
@@ -14,7 +14,6 @@ function CartList(props) {
           title={ item.name }
           description={ 'Quantity: ' + item.qty + '  ' + item.purchaseMode}
           />
-
         <div style={{width: '30px'}}>${ itemTotal(item) }</div>
       </List.Item>
     ) }/>
